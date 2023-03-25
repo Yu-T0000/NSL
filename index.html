@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>X20067</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
+        <script src="js/randomwords.js" defer></script>
+
+        <!-- ⚠️ 必ず `author.json` に学籍番号と名前(フルネーム)で記入すること -->
+    </head>
+
+    <script type="text/javascript">
+        let submitted = false;
+    </script>
+    <iframe
+        name="hidden_iframe"
+        id="hidden_iframe"
+        style="display: none"
+        onload="if(submitted){window.location='thanks.html';}"
+    ></iframe>
+
+    <body>
+       <div class="container">
+         <div class="fade">
+         <div class="titlepc"><img src="images/titlepc.png"></div>
+       </div>
+
+       <div class="fade2">
+  <h2>三つのことばから新しいスポーツを考えてみよう</h2>
+<div class="scrollbox1">
+      <h1 class="title">
+
+    <span id="wordset1">？</span>
+    <span>/</span>
+    <span id="wordset2">？</span>
+    <span>/</span>
+    <span id="wordset3">？</span>
+  </h1>
+</div>
+<div class="start-button"><img src="images/button.png"></div>
+<p class="js-scroll"><a href=""><span></span>次にすすむ</a></p>
+    </div>
+  </div>
+
+      <div class="container2">
+
+        <h3 class="hint">考えのヒント: <span id="wordset4">クリックしてみよう</span></h3>
+
+
+          <p class="js-scrollup up"><a href=""><span></span>前にもどる</a></p>
+
+          <div class="scrollbox2">
+                <h1 class="title2">
+  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfzfEuKWVErx2OEnqjBMnzo6kYBisNfPZAjp616YdROAA1sJw/formResponse"
+  method="POST"
+    target="hidden_iframe"
+    onsubmit="submitted=true;"
+    class="c-form">
+
+<table class="contact-table">
+  <tr>
+        <th class="contact-item">ニックネーム:</th>
+      <td class="contact-body">
+        <input type="text" size="50" name="entry.73284901" class="form-text" required/>
+      </td>
+    </tr>
+
+    <tr>
+    <th class="contact-item">スポーツのせつめい:</th>
+    <td class="contact-body"><textarea
+        name="entry.398794148" rows="10" cols="80" class="form-text" required></textarea></td>
+  </tr>
+</table>
+<input class="contact-submit" type="submit" value="完成！" />
+</form>
+</h1>
+</div>
+</div>
+
+
+</body>
+
+</html>
