@@ -96,17 +96,17 @@ const wordset3 = document.querySelector("#wordset3");
 const wordset4 = document.querySelector("#wordset4");
 const words = document.querySelectorAll(".title span");
 
-// min/maxからランダムな整数を取得する関数
+// min~maxからランダムな整数を取得する関数
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max + 1 - min) + min);
 }
 
-// `catTypes`から1つランダム取得してHTML要素に反映
+// 単語セットから1つランダム取得してHTML要素に反映
 function changeRandomword1() {
   const maxIndex = set1.length - 1;
   const randomIndex = getRandomInt(0, maxIndex);
 
-  // 配列catTypesから1つオブジェクトを取得
+  // 1つオブジェクトを取得
   const w1 = set1[randomIndex];
 
   // 取得したオブジェクトをDOMに反映
@@ -117,8 +117,6 @@ function changeRandomword1() {
 function changeRandomword2() {
   const maxIndex = set2.length - 1;
   const randomIndex = getRandomInt(0, maxIndex);
-
-  // 配列catTypesから1つオブジェクトを取得
   const w2 = set2[randomIndex];
 
   // 取得したオブジェクトをDOMに反映
@@ -129,8 +127,6 @@ function changeRandomword2() {
 function changeRandomword3() {
   const maxIndex = set3.length - 1;
   const randomIndex = getRandomInt(0, maxIndex);
-
-  // 配列catTypesから1つオブジェクトを取得
   const w3 = set3[randomIndex];
 
   // 取得したオブジェクトをDOMに反映
@@ -141,14 +137,14 @@ function changeRandomword3() {
 function hints() {
   const maxIndex = set4.length - 1;
   const randomIndex = getRandomInt(0, maxIndex);
-
-  // 配列catTypesから1つオブジェクトを取得
   const w4 = set4[randomIndex];
 
   // 取得したオブジェクトをDOMに反映
   wordset4.innerHTML = w4.word;
 
 }
+
+//もしかしてだけどこの辺ってclassでまとめられたりしないか...？
 
 function playAnimation() {
   changeRandomword1();
